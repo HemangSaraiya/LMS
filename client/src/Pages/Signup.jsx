@@ -39,7 +39,9 @@ const Signup = () => {
           <div className="flex items-center justify-between flex-wrap">
             <p className="text-gray-900 mt-4">Already have an account? <a href="/login" className="text-sm text-blue-500 -200 hover:underline mt-4">Login</a></p>
           </div>
-          
+          <div className="flex items-center justify-between flex-wrap">
+            <p className="text-gray-900 mt-4">Already have an account? <a href="/login" className="text-sm text-blue-500 -200 hover:underline mt-4">Login</a></p>
+          </div>
          <button type="submit" disabled={isLoading} className=" bg-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150">{isLoading?('Wait...'):('Sign Up')}</button>
         </form>
       </div>
