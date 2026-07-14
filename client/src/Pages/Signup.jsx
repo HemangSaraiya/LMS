@@ -13,8 +13,7 @@ const Signup = () => {
         setIsLoading(true)
         try{
             await api.post('/auth/signup',{username:userName,email,password,role:"student"})
-            await api.post('/auth/login', { email, password, role: "student" })
-            navigate('/');
+            navigate('/verifyemail');
         }
         catch(e){
             window.alert("email already exists")
