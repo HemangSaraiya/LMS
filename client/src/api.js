@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api=axios.create({
-    baseURL:process.env.VITE_BACKEND_URI,
+    baseURL:"https://lms-i5zo.onrender.com/api",
     withCredentials:true,
     timeout:10000
 }
